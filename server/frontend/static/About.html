@@ -1,68 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Dealerships</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .navbar { background-color: darkturquoise; height: 1in; }
+    .navbar .nav-link { font-size: larger; }
+    .page { max-width: 960px; margin: 40px auto; padding: 0 16px; }
+    .info-card { border: none; box-shadow: 0 2px 8px rgba(0,0,0,.12); height: 100%; }
+    .info-card h5 { color: #008b8b; }
+    footer { text-align: center; color: #777; padding: 24px 0; }
+  </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" href="/about">About Us</a>
+        <a class="nav-link" href="/contact">Contact Us</a>
+        <a class="nav-link" href="/dealers">Dealers</a>
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+  <div class="page">
+    <h1 class="mb-3">About Us</h1>
+    <p class="lead">Dealerships is a national network of car dealers. We help you find a dealer near you, read honest reviews from real customers and share your own experience.</p>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4">
+        <div class="card info-card p-3">
+          <h5>Dealers nationwide</h5>
+          <p class="mb-0">Browse dealerships across the US and filter them by state to find one close to you.</p>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="col-md-4">
+        <div class="card info-card p-3">
+          <h5>Honest reviews</h5>
+          <p class="mb-0">Every review comes from a customer, and each one is marked positive, neutral or negative so you can see the mood at a glance.</p>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="col-md-4">
+        <div class="card info-card p-3">
+          <h5>Share your experience</h5>
+          <p class="mb-0">Create a free account to review a dealer, with the car you bought and when you bought it.</p>
         </div>
       </div>
     </div>
+    <div class="text-center mt-5">
+      <a class="btn btn-info" href="/dealers">View Dealerships</a>
     </div>
-    </div>
-    
-</div>
-
+  </div>
+  <footer>&copy; Dealerships</footer>
+</body>
 </html>

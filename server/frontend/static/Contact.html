@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Dealerships</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    .navbar { background-color: darkturquoise; height: 1in; }
+    .navbar .nav-link { font-size: larger; }
+    .page { max-width: 960px; margin: 40px auto; padding: 0 16px; }
+    .info-card { border: none; box-shadow: 0 2px 8px rgba(0,0,0,.12); height: 100%; }
+    .info-card h5 { color: #008b8b; }
+    footer { text-align: center; color: #777; padding: 24px 0; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">About Us</a>
+        <a class="nav-link active" href="/contact">Contact Us</a>
+        <a class="nav-link" href="/dealers">Dealers</a>
+      </div>
+    </div>
+  </nav>
+  <div class="page">
+    <h1 class="mb-3">Contact Us</h1>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="/static/contactus.png" alt="Contact us" class="img-fluid" style="max-height: 260px;">
+      </div>
+      <div class="col-md-7">
+        <div class="card info-card p-4">
+          <p>Have a question about a dealer or a review? Get in touch and we will get back to you.</p>
+          <h5>Email</h5>
+          <p>support@dealerships.example</p>
+          <h5>Phone</h5>
+          <p>+1 (555) 010-2030</p>
+          <h5>Hours</h5>
+          <p class="mb-0">Monday to Friday, 9:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; Dealerships</footer>
+</body>
+</html>
